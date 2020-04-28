@@ -26,25 +26,25 @@ app.use((request, response, next) => {
   next();
 });
 
-app.use((request, response, next) => {
-  var logString = `${new Date().toString()} ${request.method} ${request.path}`;
-  console.log(logString);
-
-  fs.appendFile('server.log', logString, (err) => {
-    if (err)
-       console.log('Unable to append log');
-  });
-
-  response.render('maintenence.hbs');
-});
+// app.use((request, response, next) => {
+//   var logString = `${new Date().toString()} ${request.method} ${request.path}`;
+//   console.log(logString);
+//
+//   fs.appendFile('server.log', logString, (err) => {
+//     if (err)
+//        console.log('Unable to append log');
+//   });
+//
+//   response.render('maintenence.hbs');
+// });
 
 app.get('/', (request, response) => {
   var dataObject = {
     Page: 'Home',
     rememberNote: 'Remember to share this page with your friends as much as possible. Thanks',
     Purpose: 'manage and monitor what is new with us.',
-    Organisation: 'DevProfile (devprofile.in)',
-    Founders: ['Suresh Prabhu', 'Kamla Chand', 'Uma Shankar Pandey', 'Nihal Pandey'],
+    Organisation: 'DevProfile',
+    Founders: ['yxa', 'xx', 'xxx', 'xxx'],
     Starting: 2016,
     Aim: 'Learning, Hiring, Improving and Showcasing the developer skills all around the world',
     Operations: ['Learning Technologies', 'Hiring Platforms', 'Discussion Forums', 'Skill Showcasing'],
@@ -57,19 +57,27 @@ app.get('/about', (request, response) => {
      Page: 'User Dashboard',
      rememberNote: 'Remember to share this page with your friends as much as possible. Thanks',
      Purpose: 'manage and monitor your own profile',
-     Name: 'Shivam Shukla',
-     Username: 'shukla284',
-     Github: 'https://github.com/shukla284',
+     Name: 'xxx',
+     Username: 'xxx',
+     Github: 'xxx',
      Education: 'Computer Science Undergraduate',
      Course: 'Bachelor of Technology',
-     Branch: 'Computer Science and Engineering',
-     Institution: 'Madan Mohan Malaviya University of Technology, Gorakhpur',
+     Branch: 'xxx',
+     Institution: 'xxx',
      Development: ['MERN Stack Developer', 'Machine Learning Research', 'Artificial Intelligence',
                   'Competitive Programming'],
       Area: 'Competitive Programming and Artificial Intelligence',
-      Residence: 'Prayagraj, Uttar Pradesh, India',
+      Residence: 'xxx',
    };
    response.render('about.hbs', dataObject);
+});
+
+app.get('/projects', (request, response) => {
+    var projectDetail = {
+      Project: 'Node Server Project',
+      Technology: 'NodeJS, HandleBars'
+    };
+    response.render('project.hbs', projectDetail);
 });
 
 app.get('/bad', (request, response) => {
