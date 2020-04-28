@@ -1,0 +1,185 @@
+body
+{
+    margin:0;
+    background-image: url(/images/background.jpg);
+    background-size:100% 100%;
+}
+.container
+{
+    width:780px;
+    margin:0 auto;
+    background-image: url(/images/main-background.jpg);
+    background-size: 100% 100%;
+}
+.header
+{
+    padding: 45px 0 20px 40px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+.header a
+{
+    text-decoration: none;
+    font-family:verdana;
+    font-weight: 500;
+}
+.menu
+{
+    background:#f85719f2;
+    padding:8px 0 8px 300px ;
+}
+.menu a
+{
+    color:#c5d6db;
+    text-decoration: none;
+    font-size:20px;
+    font-family:"verdana";
+}
+.menu a:hover
+{
+    color:#2f2ff4;
+    text-shadow: 1px 1px;
+    font-size:25px;
+}
+aside
+{
+    float:left;
+    padding: 2px 0 0 40px;
+    
+}
+h1
+{
+    margin:0;
+    color:#869843;
+    font-size:44px;
+    font-family: "Arial";
+    font-weight: normal;
+}
+.main
+{
+    margin:0 0 0 200px;
+    padding:35px 40px 30px 0;
+    color:#444444;
+    font-family: "Georgia";
+    font-size:13px;
+    line-height:18px;
+    text-emphasis: justify;
+}
+footer
+{
+    padding:8px 40px 6px 40px;
+    background: #000;
+    color:azure;
+    font-family:"Lucida Sans Unicode";
+    font-size:20px;
+    text-decoration: right;
+}
+footer a
+{
+    color: #d6d6d6;
+    text-decoration:none;
+}
+footer a:hover
+{
+    text-decoration:none;
+    color: darkblue;
+}
+#image img
+{
+    width:100%;
+}
+
+#contact-page .main h1
+{
+    color:darkred;
+    font-style: normal;
+    font-family: verdana;
+    text-align: center;
+    padding:1px 2px 16px 2px;
+    margin:0 auto;
+    font-size:40px;
+    border-bottom: 2px;
+    text-shadow: 1px 1px;
+}
+.main h1:hover
+{
+    color:blue;
+}
+#contact-page #form
+{
+    text-align: center;
+}
+#contact-page #form input[type="text"]
+{
+    width:60%;
+    border-radius: 4px;
+    height: 20px;
+}
+#contact-page #form input[type="email"]
+{
+    width:60%;
+    border-radius: 4px;
+    height: 20px;
+}
+#contact-page #form #textcontent
+{
+    width:60%;
+    border-radius:4px;
+    border-color:darkblue;
+   
+}
+#contact-page #form #textcontent:hover
+{
+    width:60%;
+    border-radius:4px;
+    border-color:yellow;
+    background-color: black;
+    color:white;
+}
+#contact-page #form input[type="text"]:hover
+{
+    border-color:yellow;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: black;
+    color:white;
+}
+#contact-page #form input[type="email"]:hover 
+{
+    border-color:yellow;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: black;
+    color:white;
+}
+#contact-page #form label
+{
+    font-size: 20px;
+    font-family:verdana;
+}
+#contact-page #form input[type="submit"]
+{
+    background-color: dimgrey;
+    text-align: center;
+    width:60%;
+    height:40px;
+    color:yellow;
+    font-size:25px;
+}
+#contact-page #form input[type="submit"]:hover
+{
+    background-color: black;
+    text-align: center;
+    width:60%;
+    height:40px;
+    color:white;
+    font-size:30px;
+    border-radius:5px;
+}
+#contact-page .container
+{
+    box-shadow: 10px 5px 10px 5px;
+    
+}

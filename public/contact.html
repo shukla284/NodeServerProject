@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+     <title>Contact</title>
+     <link href="css/style.css" rel="stylesheet">
+     <script src="js/script.js"></script>
+ </head>
+ <body id="contact-page">   
+    <div class="container">
+        <header class="header">
+            <a href="">Minimalistic Website</a>
+        </header>
+        <nav class="menu">
+            <a href="/">Home</a>  &nbsp;&nbsp;&nbsp;
+            <a href="about.html">About</a> &nbsp;&nbsp;&nbsp;
+            <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;
+        </nav>
+        <aside>
+            <h1>Side Bar</h1>
+        </aside>
+        <article class="main">
+            <h1>Contact</h1>
+            <br>
+            <div id="form">
+                <form action="/php/process.php"  method="post">
+                    <label for="name">Name</label>&nbsp;<br>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <br><br>
+                    <label for="Email">Email</label>&nbsp;<br>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <br><br>
+                    <label for="subject">Subject</label>&nbsp;<br>
+                    <input type="text" name="subject" placeholder="Enter the subject">
+                    <br><br>
+                    <label for="content">Content</label>&nbsp;<br>
+                    <textarea name="Content" id="textcontent" cols="30" rows="10" placeholder="Enter your content here." required></textarea>
+                    <br><br>
+                    <input type="submit" value="Send Message" name="submit" id="submit">
+                </form>
+            </div>
+        </article>
+        <footer>
+            &copy;Minimalistic Website &nbsp; Designed at CSElabs Shivam Shukla
+            <a href="http://resonatedcoders.com"></a>
+        </footer>
+    </div>
+ </body>
+</html>    

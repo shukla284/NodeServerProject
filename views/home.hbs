@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Developer Portfolio</title>
+  </head>
+  <body>
+    {{> header}}
+    <h1 style="align: center">{{Organisation}}</h1>
+    <p>
+    Here you can have the view over the developers all around the world and manage
+    their profiles may hire them as well. The adaptive profile as per your need makes on demand
+    recommendation for the best developers to your need.
+
+    It was found in year {{Starting}}. It was found by
+    <b>
+      {{#each Founders}}
+         {{this}}
+      {{/each}}
+    </b>, with the aim {{Aim}}.
+   </p>
+
+   <p>
+       <b>What else we serve?</b>
+       <ul>
+         {{#each Operations}}
+          <li>{{this}}</li>
+         {{/each}}
+       </ul>
+   </p>
+   </div>
+
+   {{> footer}}
+  </body>
+</html>

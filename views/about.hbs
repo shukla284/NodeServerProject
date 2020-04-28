@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Web Page</title>
+  </head>
+  <body>
+    {{> header}}
+
+    <h1>Welcome: {{Username}}</h1>
+    <p>
+      <ul>
+        <li>Your full name is: {{Name}}.</li>
+        <li>Present Education Profile : {{Education}}.</li>
+        <li>Github Profile: {{Github}}.</li>
+        <li>Currently you are pursuing the course {{Course}}.
+        <li>Branch: {{Branch}}</li>
+        <li>Institution: {{Institution}}.</li>
+        <li>You are currently working in area of {{Area}}.
+        <li>You are resident of {{Residence}}</li>
+      </ul>
+    </p>
+
+   {{> footer}}
+  </body>
+</html>
